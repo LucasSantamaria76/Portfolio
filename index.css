@@ -5,14 +5,14 @@ html {
 }
 
 nav {
-  background-color: rgba(75, 93, 116, 0.767);
+  background-color: rgba(75, 93, 116, 0.76);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .menu {
-  width: 300px;
+  width: 500px;
   color: #fff;
   display: flex;
   justify-content: space-around;
@@ -30,12 +30,12 @@ nav {
   background-color: transparent;
   border: none;
   color: white;
-  text-shadow: 4px 3px 0 #7a7a7a;
+  text-shadow: 3px 2px 0 #7a7a7a;
 }
 
 .menu-item:hover {
   color: #ffffff;
   text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
-    #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px,
-    #ff2d95 0px 0px 50px, #ff2d95 0px 0px 75px;
+    #753c59 0px 0px 20px, #753c59 0px 0px 30px, #753c59 0px 0px 40px,
+    #753c59 0px 0px 50px, #753c59 0px 0px 75px;
 }

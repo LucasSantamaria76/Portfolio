@@ -1,41 +1,72 @@
 html {
-  box-sizing: border-box;
+  width: 100%;
+}
+* {
+  padding: 0;
   margin: 0;
-  height: 100vh;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 nav {
-  background-color: rgba(75, 93, 116, 0.76);
+  margin: 20px;
+  height: 80px;
+  background-color: #345b72c7;
+  border: 1px solid #fff;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.menu {
-  width: 500px;
-  color: #fff;
-  display: flex;
-  justify-content: space-around;
 }
 
 .logo {
-  width: 100px;
-  height: 65px;
-  margin: 5px 0 5px 10px;
+  margin: 10px;
+  height: 200px;
+}
+#check {
+  display: none;
 }
 
-.menu-item {
-  width: 100px;
-  height: 75px;
-  background-color: transparent;
-  border: none;
-  color: white;
-  text-shadow: 3px 2px 0 #7a7a7a;
+.menu {
+  display: none;
+}
+
+.menu a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.btnCheck {
+  font-size: 40px;
+  color: #fff;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
 }
 
 .menu-item:hover {
-  color: #ffffff;
-  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
-    #753c59 0px 0px 20px, #753c59 0px 0px 30px, #753c59 0px 0px 40px,
-    #753c59 0px 0px 50px, #753c59 0px 0px 75px;
+  color: red;
+  background-color: rgba(20, 40, 70, 0.596);
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in;
+}
+
+@media screen and (min-width: 900px) {
+  .btnCheck {
+    display: none;
+  }
+  .menu {
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu a {
+    text-align: center;
+    line-height: 78px;
+    height: 78px;
+    width: 150px;
+  }
 }

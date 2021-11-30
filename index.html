@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
-  <title>Portfolio de LS Developer</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="asset/Logo LS.png" alt="logotipo">
-      </div>
-      <div class="menu">
-        <button class="menu-item">Inicio</button>
-        <button class="menu-item">Portfolio</button>
-        <button class="menu-item">Proyectos</button>
-        <button class="menu-item">Contacto</button>
-      </div>
-    </nav>
-  </header>
+  <nav>
+    <a href="#" class="enlace"><img class="logo" src="assets/Logo LS.png" alt="logo"></a>
+    <div class="menu">
+      <a class="menu-item" href="#">Inicio</a>
+      <a class="menu-item" href="#">Sobre mí</a>
+      <a class="menu-item" href="#">Servicios</a>
+      <a class="menu-item" href="#">Portfolio</a>
+      <a class="menu-item" href="#">Contacto</a>
+    </div>
+    <input type="checkbox" id="check">
+    <label for="check" class="btnCheck"><i class="fas fa-bars"></i></label>
+  </nav>
 </body>
 
 </html>

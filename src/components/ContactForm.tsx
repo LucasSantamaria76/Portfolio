@@ -51,6 +51,8 @@ const ContactForm = () => {
 
   const onSubmit: SubmitHandler<Schema> = async (data: Schema) => {
     try {
+      console.log(process.env.NEXT_PUBLIC_SERVICE_ID)
+
       const res = await emailjs.sendForm(
         process.env.NEXT_PUBLIC_SERVICE_ID!,
         process.env.NEXT_PUBLIC_TEMPLATE_ID!,

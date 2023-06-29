@@ -1,5 +1,12 @@
 'use client'
 
+import {
+  CheckCircleIcon,
+  ExclamationTriangleIcon,
+  InformationCircleIcon,
+  XCircleIcon
+} from '@heroicons/react/24/outline'
+
 export type TAlert = 'info' | 'error' | 'warning' | 'success'
 
 export interface PropsAlert {
@@ -15,6 +22,13 @@ const colors = {
   success: 'bg-green-500/50 border-green-400 text-green-800'
 }
 
+const icons = {
+  info: <InformationCircleIcon className={`h-6 w-6 text-blue-500`} />,
+  error: <XCircleIcon className={`h-6 w-6 text-red-500`} />,
+  warning: <ExclamationTriangleIcon className={`h-6 w-6 text-yellow-500`} />,
+  success: <CheckCircleIcon className={`h-6 w-6 text-green-500`} />
+}
+
 export const Alert = ({ type, msg, show = false }: PropsAlert) => {
   return (
     <>
@@ -24,18 +38,8 @@ export const Alert = ({ type, msg, show = false }: PropsAlert) => {
             className={`absolute bottom-4 inset-x-auto z-20 border rounded text-sm p-4 flex justify-between ${colors[type]}`}
           >
             <div>
-              <div className='flex items-center'>
-                <svg
-                  className='w-8 h-8 mr-2'
-                  viewBox='0 0 20 20'
-                  fill='currentColor'
-                >
-                  <path
-                    fillRule='evenodd'
-                    d='M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z'
-                    clipRule='evenodd'
-                  />
-                </svg>
+              <div className='flex items-center gap-2'>
+                {icons[type]}
                 <p className='text-black'>{msg}</p>
               </div>
             </div>

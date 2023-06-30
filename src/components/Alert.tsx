@@ -35,7 +35,7 @@ export const Alert = ({ type, msg, show = false }: PropsAlert) => {
       {show && (
         <div className='flex items-center justify-center'>
           <div
-            className={`absolute bottom-4 inset-x-auto z-20 border rounded text-sm p-4 flex justify-between ${colors[type]}`}
+            className={`absolute top-36 md:top-20 inset-x-auto z-20 border rounded text-sm p-4 flex justify-between ${colors[type]}`}
           >
             <div>
               <div className='flex items-center gap-2'>

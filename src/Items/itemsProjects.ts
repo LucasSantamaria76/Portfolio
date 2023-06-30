@@ -4,16 +4,31 @@ export const itemsProjects: TItemsProyect[] = [
   {
     id: 1,
     name: 'Portfolio',
-    description: 'Portfolio personal desarrolado con Next.js, Tailwindcss, React-hook-form, Zod',
+    description:
+      'Portfolio personal desarrolado con Next.js, TypeScript, Tailwindcss, React-hook-form, Zod y EmailJS',
     image:
       'https://res.cloudinary.com/dldd3gcr5/image/upload/v1682718485/Portfolio%20asset/Portfolio_swb4ti.png',
     linkDemo: 'https://portfolio-lucas-santamaria.vercel.app/',
     linkRepo: 'https://github.com/LucasSantamaria76/Portfolio',
     icon: 'https://res.cloudinary.com/dldd3gcr5/image/upload/v1683747679/favicon_sipnof.ico',
-    technologies: ['next', 'typescript', 'tailwind', 'rhf', 'zod']
+    technologies: ['next', 'typescript', 'tailwind', 'rhf', 'zod', 'EmailJS'],
+    download: false
   },
   {
-    id: 2,
+    id: 3,
+    name: 'Fruit-system',
+    description: `Sistema de caja para dispositivos moviles de un comercio de frutas y verduras desarrollado con React-native , React-navigation, Zustand, Tailwind CSS y Supabase. ---
+    Datos de prueba :  ( Correo: admin@admin - 
+    Password: 123456 ) =====  Nota:" En la demo se borran los datos de forma frecuente, para uso comercial enviarme un mensaje en el apartado de contacto "`,
+    image: 'https://res.cloudinary.com/dldd3gcr5/image/upload/v1688068255/tablet_e1qtfw.png',
+    linkDemo: 'https://mega.nz/file/DUMhxCZI#k9EdjMwjor03SRNvlLPzYkaxl56wxgAgfBhg1Fy-Tls',
+    linkRepo: 'https://github.com/LucasSantamaria76/Fruit-system.git',
+    icon: 'https://res.cloudinary.com/dldd3gcr5/image/upload/v1688067336/iconFV_wptukr.png',
+    technologies: ['RN', 'RNav', 'tailwind', 'zustand', 'supabase'],
+    download: true
+  },
+  {
+    id: 8,
     name: 'Sys-Market',
     description: `Sistema de caja de un almacén desarrollado en el Front-End con ReactJS, Mantine UI, Redux Toolkit, Zod y en el
     Back-End con NodeJS, ExpressJS, TypeScript, Prisma ORM, Bcrypt, Jsonwebtoken    
@@ -34,7 +49,8 @@ export const itemsProjects: TItemsProyect[] = [
       'prisma',
       'bcrypt',
       'jwt'
-    ]
+    ],
+    download: false
   },
   {
     id: 9,
@@ -46,7 +62,8 @@ export const itemsProjects: TItemsProyect[] = [
     linkDemo: 'https://free-market-nucba.vercel.app/',
     linkRepo: 'https://github.com/LucasSantamaria76/integrador-react-nucba',
     icon: 'https://res.cloudinary.com/dldd3gcr5/image/upload/v1683750204/vite_xo5mlj.svg',
-    technologies: ['react', 'sc', 'swa2', 'firebase', 'formik', 'rtk']
+    technologies: ['react', 'sc', 'swa2', 'firebase', 'formik', 'rtk'],
+    download: false
   },
   {
     id: 10,
@@ -58,6 +75,7 @@ export const itemsProjects: TItemsProyect[] = [
     linkDemo: 'https://mitienditaonline.vercel.app/',
     linkRepo: 'https://github.com/LucasSantamaria76/Proyecto-Integrador-Javascript-Nucba-',
     icon: 'https://res.cloudinary.com/dldd3gcr5/image/upload/v1683751719/favicon_uvloj2.ico',
-    technologies: ['html', 'css', 'bootstrap', 'swa2']
+    technologies: ['html', 'css', 'bootstrap', 'swa2'],
+    download: false
   }
 ]

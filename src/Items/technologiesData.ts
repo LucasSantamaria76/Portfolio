@@ -115,5 +115,25 @@ export const technologyData: Record<string, TDataTechnology> = {
     label: 'Bootstrap',
     link: 'https://getbootstrap.com/',
     logo: 'https://res.cloudinary.com/dldd3gcr5/image/upload/v1682717890/Portfolio%20asset/Bootstrap_h6jb4y.png'
+  },
+  RN: {
+    label: 'React Native',
+    link: 'https://reactnative.dev/',
+    logo: 'https://res.cloudinary.com/dldd3gcr5/image/upload/v1682717891/Portfolio%20asset/Reactjs_dxglre.webp'
+  },
+  RNav: {
+    label: 'React Navigation',
+    link: 'https://reactnavigation.org/',
+    logo: 'https://res.cloudinary.com/dldd3gcr5/image/upload/v1688067624/React-navigation_tm3p3l.svg'
+  },
+  supabase: {
+    label: 'Supabase',
+    link: 'https://supabase.com/',
+    logo: 'https://res.cloudinary.com/dldd3gcr5/image/upload/v1688067968/supabase_rrm9ve.png'
+  },
+  EmailJS: {
+    label: 'EmailJS',
+    link: 'https://www.emailjs.com/',
+    logo: 'https://res.cloudinary.com/dldd3gcr5/image/upload/v1688068852/EmailJS_ntx8l4.png'
   }
 }

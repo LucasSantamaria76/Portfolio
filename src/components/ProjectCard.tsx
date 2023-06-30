@@ -9,19 +9,19 @@ const ProjectCard = ({ project }: Props) => {
   return (
     <div
       id='ProjectCard'
-      className='w-11/12 h-full flex flex-col justify-between items-center gap-4 mt-3 pb-10 border-b border-gray-400'
+      className='flex flex-col items-center justify-between w-11/12 h-full gap-4 pb-10 mt-3 border-b border-gray-400'
     >
       <h2 className='text-xl font-bold text-white drop-shadow-lg shadow-black'>{project.name}</h2>
-      <div className='flex flex-col sm:flex-row sm:justify-between gap-3 w-full h-full sm:h-48 xl:h-56'>
-        <div className='flex flex-col gap-3 justify-between h-full w-full sm:w-1/2 md:w-3/5'>
-          <p className='w-full px-2 sm:px-0 text-sm text-white drop-shadow-lg shadow-black sm:self-start'>
+      <div className='flex flex-col w-full h-full gap-3 sm:flex-row sm:justify-between sm:h-48 xl:h-56'>
+        <div className='flex flex-col justify-between w-full h-full gap-3 sm:w-1/2 md:w-3/5'>
+          <p className='w-full px-2 text-sm text-white sm:px-0 drop-shadow-lg shadow-black sm:self-start'>
             {project.description}
           </p>
-          <div className='flex items-center justify-around sm:justify-start gap-3 w-full'>
+          <div className='flex items-center justify-around w-full gap-3 sm:justify-start'>
             <a
               href={project.linkDemo}
               target='_blank'
-              className='flex items-center gap-2 px-4 glass rounded-md shadow-sm shadow-white text-sm text-white drop-shadow-lg cursor-pointer hover:text-gray-300 active:shadow-none'
+              className='flex items-center gap-2 px-4 text-sm text-white rounded-md shadow-sm cursor-pointer glass shadow-white drop-shadow-lg hover:text-gray-300 active:shadow-none'
             >
               <Image
                 width={40}
@@ -29,12 +29,12 @@ const ProjectCard = ({ project }: Props) => {
                 src={project.icon}
                 alt='favicon'
               />
-              Ir a la demo
+              {project.download ? 'Descargar demo' : 'Ir a la demo'}
             </a>
             <a
               href={project.linkRepo}
               target='_blank'
-              className='flex items-center gap-2 px-4 glass rounded-md shadow-sm shadow-white text-sm text-white drop-shadow-lg cursor-pointer hover:text-gray-300 active:shadow-none'
+              className='flex items-center gap-2 px-4 text-sm text-white rounded-md shadow-sm cursor-pointer glass shadow-white drop-shadow-lg hover:text-gray-300 active:shadow-none'
             >
               <Image
                 width={40}

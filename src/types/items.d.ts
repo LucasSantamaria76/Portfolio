@@ -18,4 +18,5 @@ export interface TItemsProyect {
   description: string
   icon: string
   technologies: string[]
+  download: boolean
 }

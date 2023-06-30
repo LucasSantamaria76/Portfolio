@@ -4,6 +4,7 @@ export const skills: string[] = [
   'javascript',
   'react',
   'next',
+  'RN',
   'typescript',
   'node',
   'express',
@@ -21,5 +22,6 @@ export const skills: string[] = [
   'bcrypt',
   'jwt',
   'swa2',
-  'bootstrap'
+  'bootstrap',
+  'supabase'
 ]
